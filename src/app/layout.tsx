@@ -8,8 +8,7 @@ import { ViewTransitions } from "next-view-transitions"
 import { Toaster } from "@/components/ui/sonner"
 import { Poppins } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
-
-import "../styles/globals.css"
+import "@/styles/globals.css"
 
 export const metadata: Metadata = {
   title: "Create Next App",
