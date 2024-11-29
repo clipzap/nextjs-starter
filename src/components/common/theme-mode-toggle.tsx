@@ -2,15 +2,11 @@
 
 import * as React from "react"
 
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
 
 export function ThemeModeToggle({ className }: { className?: string }) {
   const { theme, setTheme } = useTheme()

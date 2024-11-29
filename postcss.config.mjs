@@ -4,6 +4,6 @@ const config = {
     tailwindcss: {},
     autoprefixer: {}, // 添加 autoprefixer
   },
-};
+}
 
-export default config;
+export default config

@@ -1,20 +1,32 @@
 "use client"
 
-import { ThemeModeToggle } from "@/components/common/theme-mode-toggle"
-import { Button, buttonVariants } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { useLocale, useTranslations } from "next-intl"
 import { Link } from "next-view-transitions"
 import { toast } from "sonner"
 
+import LocaleSwitcher from "@/components/common/locale-switcher"
 import { ThemeModeToggle } from "@/components/common/theme-mode-toggle"
 import { Button, buttonVariants } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-import { Link } from "next-view-transitions"
-import { toast } from "sonner"
 
 export default function Home() {
+  const t = useTranslations("HomePage")
+  const tl = useTranslations("LocaleSwitcher")
+  const locale = useLocale()
+  const items: Array<{ value: string; label: string }> = [
+    {
+      value: "en",
+      label: tl("en"),
+    },
+    {
+      value: "zh-Hans",
+      label: tl("zh-Hans"),
+    },
+  ]
+
   return (
     <main className="flex h-full flex-col items-center justify-center gap-6 text-center">
+      <h1>{t("title")}</h1>
       <Link
         className={buttonVariants({
           size: "lg",
@@ -38,6 +50,7 @@ export default function Home() {
         Click me
       </Button>
       <ThemeModeToggle />
+      <LocaleSwitcher locale={locale} items={items} />
     </main>
   )
 }

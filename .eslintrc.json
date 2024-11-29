@@ -5,14 +5,25 @@
     "prettier",
     "plugin:tailwindcss/recommended"
   ],
-  "plugins": ["tailwindcss", "check-file", "n"],
+  "plugins": [
+    "tailwindcss",
+    "check-file",
+    "n"
+  ],
   "rules": {
-    "prefer-arrow-callback": ["error"],
-    "prefer-template": ["error"],
+    "prefer-arrow-callback": [
+      "error"
+    ],
+    "prefer-template": [
+      "error"
+    ],
     // "semi": [
     //   "error"
     // ],
-    "quotes": ["error", "double"],
+    "quotes": [
+      "error",
+      "double"
+    ],
     // "n/no-process-env": ["error"],
     "tailwindcss/enforces-shorthand": "off",
     "@typescript-eslint/no-empty-object-type": "off",
@@ -33,5 +44,6 @@
         "app/**/!^[.*": "KEBAB_CASE"
       }
     ]
+    // "react/jsx-no-literals": "error"
   }
 }

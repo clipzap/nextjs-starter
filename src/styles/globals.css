@@ -73,33 +73,3 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
-/*osx style scrollbar*/
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track-piece {
-  background-color: transparent;
-}
-
-body::-webkit-scrollbar-track-piece {
-  background-color: white;
-}
-
-::-webkit-scrollbar-track-piece:no-button {
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #7d7d7d;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #999;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background-color: #666;
-}
